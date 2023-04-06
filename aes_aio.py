@@ -25,7 +25,7 @@ def encrypt_message():
         with open("message.txt", "rb") as f:
             message=f.read()
     else:
-        message = input("Enter the message to encrypt: ").encode()
+        message=input("Enter the message to encrypt: ").encode()
         with open("message.txt", "wb") as f:
             f.write(message)
 
@@ -76,7 +76,7 @@ def main():
 
         if choice == "1":
             key_size=int(input("Enter key size in bits (128, 192, or 256): "))
-            generate_key(key_size)
+            generate_key(key_size) # Max 263
             print("Key Generated Successfully. Saved to key.txt")
 
         elif choice == "2":
@@ -97,4 +97,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
