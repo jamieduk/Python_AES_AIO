@@ -1,0 +1,37 @@
+Python3 AES Crpto (c) J~Net 2023
+
+jnet.sytes.net
+
+git clone https://github.com/jamieduk/Python_AES_AIO/.git
+
+
+Make Executabe
+
+sudo chmod +x *.py
+
+
+Run
+
+./aes_aio.py
+
+
+
+Usage:
+
+
+Has menu,
+
+Option 1 to Generate A Key
+
+Option 2 To Encrypt message.txt
+
+Option 3 Decrypt encrypted.txt
+
+
+The other Secure Com user must have the correct key.txt, iv.txt and encrypted.txt to decrypt message!
+
+
+
+
+
+
