@@ -9,9 +9,10 @@ from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
 
+print("Python3 AES Crpto (c) J~Net 2023")
 
 def generate_key(key_size):
-    key=os.urandom(key_size//8)
+    key=os.urandom(key_size // 8)
     with open("key.txt", "wb") as f:
         f.write(key)
 
