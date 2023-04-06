@@ -71,15 +71,15 @@ def main():
         if choice == "1":
             key_size=int(input("Enter key size in bits (128, 192, or 256): "))
             generate_key(key_size)
-            print("Key generated successfully.")
+            print("Key Generated Successfully. Saved to key.txt")
 
         elif choice == "2":
             encrypt_message()
-            print("Message encrypted successfully.")
+            print("Message Encrypted Successfully. Saved to encrypted.txt")
 
         elif choice == "3":
             decrypt_message()
-            print("Message decrypted successfully.")
+            print("Message Decrypted Successfully.  Saved to decrypted.txt")
 
         elif choice == "4":
             print("Exiting program.")

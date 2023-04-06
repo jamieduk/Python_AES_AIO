@@ -31,7 +31,7 @@ Option 3 Decrypt encrypted.txt
 The other Secure Com user must have the correct key.txt, iv.txt and encrypted.txt to decrypt message!
 
 
-
+iv.txt updates so make sure the other user has the correct iv.txt
 
 
 
