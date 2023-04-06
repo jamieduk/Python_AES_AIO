@@ -21,8 +21,13 @@ def encrypt_message():
     with open("key.txt", "rb") as f:
         key=f.read()
 
-    with open("message.txt", "rb") as f:
-        message=f.read()
+    if os.path.isfile("message.txt"):
+        with open("message.txt", "rb") as f:
+            message=f.read()
+    else:
+        message = input("Enter the message to encrypt: ").encode()
+        with open("message.txt", "wb") as f:
+            f.write(message)
 
     iv=os.urandom(16)
     with open("iv.txt", "wb") as f:
