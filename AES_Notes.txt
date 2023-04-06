@@ -2,7 +2,7 @@ Python3 AES Crpto (c) J~Net 2023
 
 jnet.sytes.net
 
-git clone https://github.com/jamieduk/Python_AES_AIO/.git
+git clone https://github.com/jamieduk/Python_AES_AIO.git
 
 
 Make Executabe
