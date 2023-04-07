@@ -68,24 +68,24 @@ def decrypt_message():
 def main():
     while True:
         print("Please select an option:")
-        print("1. Generate AES key")
-        print("2. Encrypt message")
-        print("3. Decrypt message")
+        print("1. 🔑 Generate AES key")
+        print("2. 🔏 Encrypt message")
+        print("3. 🔓 Decrypt message")
         print("4. Exit")
         choice=input("> ")
 
         if choice == "1":
-            key_size=int(input("Enter key size in bits (128, 192, or 256): "))
+            key_size=int(input("🔑 Enter key size in bits (128, 192, or 256): "))
             generate_key(key_size) # Max 263
-            print("Key Generated Successfully. Saved to key.txt")
+            print("🔑 Key Generated Successfully. Saved to key.txt")
 
         elif choice == "2":
             encrypt_message()
-            print("Message Encrypted Successfully. Saved to encrypted.txt")
+            print("🔏 Message Encrypted Successfully. Saved to encrypted.txt")
 
         elif choice == "3":
             decrypt_message()
-            print("Message Decrypted Successfully.  Saved to decrypted.txt")
+            print("🔓 Message Decrypted Successfully.  Saved to decrypted.txt")
 
         elif choice == "4":
             print("Exiting program.")
